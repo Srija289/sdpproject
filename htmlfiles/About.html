@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Election Monitoring System</title>
+   <link rel="stylesheet" type = "text/css" href ="../cssfiles/About.css"  />
+   <!-- Leaflet Map CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<!-- Leaflet Map JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">ELECTION MONITORING SYSTEM</div>
+    <nav>
+      <nav class="navbar" aria-label="Main Navigation">
+    <div class="logo">VoteVision</div>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Election.html">Election</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="contact.html">Contact</a></li>
+        <li><a href="Report.html">Report</a></li>
+    </ul>
+  </nav>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <div class="about-content">
+      <h1>About the Election Monitoring System</h1>
+      <p>
+        The Election Monitoring System is designed to ensure fairness, transparency, and efficiency in the electoral process. 
+        It allows citizens and officials to report irregularities, track voting activity, and support secure and trustworthy elections.
+      </p>
+
+      <h2>Our Mission</h2>
+      <p>
+        To enhance public trust in elections by enabling citizens to participate in monitoring and safeguarding the democratic process.
+      </p>
+
+      <h2>What We Do</h2>
+      <ul>
+        <li>Enable citizens to report election-related issues.</li>
+        <li>Track and document complaints and incidents.</li>
+        <li>Promote transparency and integrity in elections.</li>
+      </ul>
+
+      <h2>Why It Matters</h2>
+      <p>
+        Free and fair elections are the cornerstone of democracy. By monitoring the election process, we help prevent fraud, 
+        ensure ethical practices, and support the rights of every voter.
+      </p>
+    </div>
+  </section>
+
+  <h2 style="text-align:center;">Election Monitoring Map</h2>
+
+<div id="map" style="height:400px; width:90%; margin:auto; border-radius:10px;"></div>
+
+<script>
+  // Initialize map (India view)
+  var map = L.map('map').setView([20.5937, 78.9629], 5);
+
+  // Load OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Election locations (sample)
+  var locations = [
+    {
+      city: "New Delhi",
+      coords: [28.6139, 77.2090],
+      info: "Election Commission of India"
+    },
+    {
+      city: "Hyderabad",
+      coords: [17.3850, 78.4867],
+      info: "Telangana State Elections"
+    },
+    {
+      city: "Mumbai",
+      coords: [19.0760, 72.8777],
+      info: "Maharashtra Assembly Elections"
+    }
+  ];
+
+  // Add markers
+  locations.forEach(function(place) {
+    L.marker(place.coords)
+      .addTo(map)
+      .bindPopup("<b>" + place.city + "</b><br>" + place.info);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Issue | Election Monitoring System</title>
+  <link rel="stylesheet" href="../cssfiles/Report.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">ELECTION MONITORING SYSTEM</div>
+  <header>
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="logo">VoteVision</div>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Election.html">Election</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="contact.html">Contact</a></li>
+        <li><a href="Report.html">Report</a></li>
+    </ul>
+  </nav>
+</header>
+  
+</header>
+
+<section class="report-section">
+  <h1>Report an Election Issue</h1>
+  <p>Your report helps ensure fair and transparent elections.</p>
+
+  <textarea id="issueText" placeholder="Describe the issue..." rows="4"></textarea>
+  <br><br>
+  <button onclick="reportIssue()">Submit Issue</button>
+
+  <h3>Reported Issues</h3>
+  <ul id="historyList"></ul>
+
+  <button onclick="clearHistory()">Clear All Reports</button>
+</section>
+
+<script src="../jsfiles/issueHistory.js"></script>
+</body>
+</html>

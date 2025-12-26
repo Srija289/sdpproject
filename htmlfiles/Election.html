@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elections | Election Monitoring System</title>
+  <link rel="stylesheet" href="../cssfiles/Election.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ELECTION MONITORING SYSTEM</div>
+    <nav class="navbar" aria-label="Main Navigation">
+    <div class="logo">VoteVision</div>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Election.html">Election</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="contact.html">Contact</a></li>
+        <li><a href="Report.html">Report</a></li>
+    </ul>
+  </nav>
+  </header>
+
+
+  <section class="hero-header">
+    <h1>Election Overview</h1>
+    <p>Stay informed about ongoing, past, and upcoming elections with transparent updates.</p>
+  </section>
+
+  
+  <section class="tabs-container">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="openTab('current')">🗳 Current</button>
+      <button class="tab-btn" onclick="openTab('past')">📅 Past</button>
+      <button class="tab-btn" onclick="openTab('results')">🏆 Results</button>
+    </div>
+
+    <div class="tab-content active" id="current">
+      <div class="cards">
+        <div class="card">
+          <h3>Telangana State Assembly 2025</h3>
+          <p>Live voting across all districts. Monitored under Election Commission standards.</p>
+          <span class="status ongoing">Ongoing</span>
+        </div>
+        <div class="card">
+          <h3>Delhi Municipal Elections 2025</h3>
+          <p>Polling in progress for 272 wards. Results expected soon.</p>
+          <span class="status ongoing">Ongoing</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="past">
+      <div class="cards">
+        <div class="card">
+          <h3>General Elections 2024</h3>
+          <p>Successfully completed with a record turnout of 72%.</p>
+          <span class="status completed">Completed</span>
+        </div>
+        <div class="card">
+          <h3>Presidential Elections 2024</h3>
+          <p>Global attention with smooth and transparent process.</p>
+          <span class="status completed">Completed</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="results">
+      <div class="cards">
+        <div class="card">
+          <h3>Maharashtra Assembly</h3>
+          <p>Party A secured majority with 140 seats out of 240.</p>
+          <span class="status result">Result Declared</span>
+        </div>
+        <div class="card">
+          <h3>Bengaluru Municipal Elections</h3>
+          <p>Party B achieved 60% vote share with clear lead.</p>
+          <span class="status result">Result Declared</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../jsfiles/Elections.js"></script>
+</body>
+</html>

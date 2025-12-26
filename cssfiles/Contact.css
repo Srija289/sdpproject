@@ -1,0 +1,153 @@
+.navbar {
+  background: linear-gradient(90deg, #1a237e, #1e88e5);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  margin: 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  border-bottom: 2px solid #ffeb3b;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #c3e0f9, #f8f9fa);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #0056b3;
+    margin-top: 40px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h5 {
+    color: #444;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+
+.message {
+    background-color: #ffffff;
+    width: 50%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+.message p {
+    font-weight: 600;
+    color: #222;
+}
+
+
+input[type="text"],
+input[type="email"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.3);
+    outline: none;
+}
+
+
+button {
+    background: linear-gradient(90deg, #007bff, #00bfff);
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0056b3, #0099cc);
+    transform: scale(1.05);
+}
+
+
+.options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 50px auto;
+    width: 85%;
+}
+
+.options div {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.options div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+
+.options h3 {
+    color: #007bff;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.options p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

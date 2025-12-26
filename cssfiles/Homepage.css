@@ -1,0 +1,142 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY BACKGROUND */
+body {
+  background: linear-gradient(135deg, #e3e7ff, #d7d3ff);
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  background: linear-gradient(90deg, #1a237e, #1e88e5);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  margin: 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  border-bottom: 2px solid #ffeb3b;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, #1a237e, #3949ab);
+  margin: 20px;
+  border-radius: 25px;
+  padding: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: fadeIn 1.5s ease;
+}
+
+/* HERO TEXT */
+.hero-content {
+  color: white;
+  max-width: 500px;
+  animation: slideLeft 1.5s ease;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.hero-content button {
+  background: #ffeb3b;
+  color: #1a237e;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hero-content button:hover {
+  transform: scale(1.05);
+}
+
+/* HERO IMAGE */
+.hero-image img {
+  width: 620px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin: 20px;
+  color: #333;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(-60px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 300px;
+    margin-top: 30px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
